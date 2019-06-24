@@ -38,7 +38,7 @@ class todosController extends Controller
         $todo->name = $data['name'];
         $todo->description = $data['description'];
         $todo->completed = false;
-        $todo->save();
+        $todo->save(); 
 
         session()->flash('success', 'Todo created succesfully');
         
